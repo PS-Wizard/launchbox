@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+html {
+    background-color:#000;
+    color:#fff;
+    padding: 2rem;
+    font-family: "PP Neue Montreal", sans-serif;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jetbrains {
+    font-family: "JetBrains Mono";
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("/fonts/ppneuemontreal-book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PP Neue Montreal";
+    src: url("/fonts/ppneuemontreal-medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+.pp_neue {
+    font-family: "PP Neue Montreal", sans-serif;
+}
+
+
+:root {
+    /* Fluid type scale */
+    --fs-xs:   clamp(0.70rem, 0.65rem + 0.15vw, 0.75rem);
+    --fs-sm:   clamp(0.80rem, 0.75rem + 0.20vw, 0.875rem);
+    --fs-base: clamp(1.00rem, 0.90rem + 0.35vw, 1.25rem);
+    --fs-md:   clamp(1.20rem, 1.00rem + 0.60vw, 1.50rem);
+    --fs-lg:   clamp(1.50rem, 1.20rem + 1.00vw, 2.00rem);
+    --fs-xl:   clamp(2.00rem, 1.60rem + 1.50vw, 2.75rem);
+    --fs-xxl:  clamp(2.50rem, 2.00rem + 2.50vw, 3.50rem);
+
+    /* Line heights */
+    --lh-display: 1.1;
+    --lh-heading: 1.2;
+    --lh-body: 1.5;
+    --lh-small: 1.4;
+}
+
+h1 {
+    font-size: var(--fs-xxl);
+    line-height: var(--lh-display);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-display);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--fs-lg);
+    line-height: var(--lh-heading);
+    font-weight: 500;
+}
+
+p {
+    font-size: var(--fs-base);
+    line-height: var(--lh-body);
+}
+
+.small {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-small);
+}
+
+.caption {
+    font-size: var(--fs-xs);
+    line-height: var(--lh-small);
+}
