@@ -1,4 +1,5 @@
 <script>
+    import SvgScroll from "$lib/components/SvgScroll.svelte";
     import VerticalLine from "$lib/components/VerticalLine.svelte";
 </script>
 
@@ -232,66 +233,7 @@
     </div>
 </section>
 
-<!-- Process Section -->
-<section class="bg-transparent py-32 relative">
-    <div class="mx-auto">
-        <div class="mb-20">
-            <h2
-                class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight text-right"
-            >
-                How we work.<br />
-                <span class="text-neutral-500">Simple. Fast. Effective.</span>
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Step 1 -->
-            <div
-                class="border border-neutral-800 rounded-3xl p-10 hover:border-white/20 transition-all backdrop-blur-xl"
-            >
-                <div class="text-6xl font-bold text-neutral-800 mb-6">01</div>
-                <h3 class="text-3xl font-bold text-white mb-4">Discovery</h3>
-                <p class="text-neutral-400 leading-relaxed mb-6">
-                    We dive deep into your business goals, target audience, and
-                    competitive landscape. No generic templates—every project
-                    starts with research.
-                </p>
-                <div class="text-neutral-500 text-sm">Week 1</div>
-            </div>
-
-            <!-- Step 2 -->
-            <div
-                class="border border-neutral-800 rounded-3xl p-10 hover:border-white/20 transition-all backdrop-blur-xl"
-            >
-                <div class="text-6xl font-bold text-neutral-800 mb-6">02</div>
-                <h3 class="text-3xl font-bold text-white mb-4">
-                    Design & Build
-                </h3>
-                <p class="text-neutral-400 leading-relaxed mb-6">
-                    Rapid prototyping to production. We design in the browser,
-                    ship fast iterations, and keep you in the loop every step of
-                    the way.
-                </p>
-                <div class="text-neutral-500 text-sm">Week 2-3</div>
-            </div>
-
-            <!-- Step 3 -->
-            <div
-                class="border border-neutral-800 rounded-3xl p-10 hover:border-white/20 transition-all backdrop-blur-xl"
-            >
-                <div class="text-6xl font-bold text-neutral-800 mb-6">03</div>
-                <h3 class="text-3xl font-bold text-white mb-4">
-                    Launch & Scale
-                </h3>
-                <p class="text-neutral-400 leading-relaxed mb-6">
-                    Deploy with confidence. We handle hosting, monitoring, and
-                    post-launch optimization. Your success is our success.
-                </p>
-                <div class="text-neutral-500 text-sm">Week 4+</div>
-            </div>
-        </div>
-    </div>
-</section>
+<SvgScroll />
 
 <!-- CTA Section -->
 <section class="bg-transparent py-32 px-6 relative">

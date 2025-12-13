@@ -1,54 +1,16 @@
 <script lang="ts">
-    import { onMount, onDestroy } from "svelte";
-
-    let footerElement: HTMLElement;
-    let showSpline = false;
-    let observer: IntersectionObserver | null = null;
-
-    onMount(() => {
-        observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        showSpline = true;
-                    } else {
-                        // Unload iframe when footer is out of view
-                        showSpline = false;
-                    }
-                });
-            },
-            { threshold: 0.1 },
-        );
-
-        if (footerElement) {
-            observer.observe(footerElement);
-        }
-    });
-
-    onDestroy(() => {
-        if (observer) {
-            observer.disconnect();
-            observer = null;
-        }
-    });
 </script>
 
-<footer
-    bind:this={footerElement}
-    class="relative min-h-screen w-full overflow-hidden bg-black"
->
-    <!-- Background Spline iframe -->
-    {#if showSpline}
-        <div class="absolute inset-0 w-full h-full">
-            <iframe
-                src="https://my.spline.design/interactivecubes-uQ9ZyWHNUgarN73g5l7yoRSc/"
-                frameborder="0"
-                width="100%"
-                height="100%"
-                title="Interactive 3D Background"
-            ></iframe>
-        </div>
-    {/if}
+<footer class="relative min-h-screen w-full overflow-hidden bg-black">
+    <div class="absolute inset-0 w-full h-full hidden lg:block">
+        <iframe
+            src="https://my.spline.design/interactivecubes-uQ9ZyWHNUgarN73g5l7yoRSc/"
+            frameborder="0"
+            width="100%"
+            height="100%"
+            title=""
+        ></iframe>
+    </div>
 
     <!-- Footer Content -->
     <div class="relative z-10 w-full px-6 py-20">
@@ -172,7 +134,7 @@
                 <div class="flex items-center gap-8">
                     <div class="text-2xl font-bold text-white">LaunchBox.</div>
                     <p class="text-neutral-500 text-sm">
-                        © 2024 All rights reserved.
+                        &copy; 2025 All rights reserved.
                     </p>
                 </div>
 

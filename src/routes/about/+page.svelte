@@ -1,5 +1,4 @@
-<script>
-    import Footer from "$lib/components/Footer.svelte";
+<h1>
+    ABOUT US
 
-</script>
-<h1>about</h1>
+</h1>
