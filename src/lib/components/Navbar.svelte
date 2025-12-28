@@ -1,7 +1,6 @@
 <script lang="ts">
     let items = [
         { label: "Home", href: "/" },
-        { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },
     ];
 

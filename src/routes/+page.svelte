@@ -53,19 +53,13 @@
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 pointer-events-auto">
             <a
-                href="/"
+                href="/contact"
                 class="group relative text-lg bg-white text-black rounded-lg px-8 py-4 font-semibold inline-flex items-center gap-2 hover:bg-neutral-100 transition-all shadow-lg hover:shadow-xl"
             >
                 Contact Us
                 <span class="group-hover:translate-x-1 transition-transform"
-                    >→</span
+                    >&rarr;</span
                 >
-            </a>
-            <a
-                href="/"
-                class="text-lg bg-white/5 text-white border border-white/10 rounded-lg px-8 py-4 font-semibold inline-flex items-center gap-2 hover:bg-white/10 transition-all backdrop-blur-sm"
-            >
-                View Our Work
             </a>
         </div>
 
