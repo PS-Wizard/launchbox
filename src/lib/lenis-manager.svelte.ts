@@ -1,7 +1,8 @@
 // src/lib/lenis-manager.svelte.ts
 // This runs ONCE in your layout and never re-renders
 import Lenis from 'lenis';
-import { gsap } from 'gsap';
+import gsap from 'gsap';
+
 import ScrollTriggerPlugin from 'gsap/ScrollTrigger';
 const ScrollTrigger = ScrollTriggerPlugin;
 if (typeof window !== 'undefined') {
