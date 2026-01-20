@@ -1,7 +1,9 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    import ScrollTriggerPlugin from "gsap/ScrollTrigger";
+    const ScrollTrigger = ScrollTriggerPlugin;
+    gsap.registerPlugin(ScrollTrigger);  
 
     let {
         svgPath = "M115.283 25.0007C115.283 25.0007 -44.7166 220.001 61.2834 328.001C167.283 436.001 1013.28 870.001 1007.28 494.001C1001.28 118.001 -10.2167 219.001 38.2833 817.001C86.7834 1415 470.783 1578.5 529.283 1261.5C587.783 944.501 296.783 995.501 421.783 1177",
