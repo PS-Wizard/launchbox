@@ -1,8 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { afterNavigate, beforeNavigate, goto } from "$app/navigation";
-    import { gsap } from "gsap";
-
+    import gsap from 'gsap';
     let blocks: { x: number; y: number; w: number; h: number }[] = $state([]);
     let divBlocks: HTMLElement[] = $state([]);
     let isInitialLoad = $state(true);
